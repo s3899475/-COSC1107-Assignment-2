@@ -1,0 +1,56 @@
+html, body {
+  width:  100%;
+  height: 100%;
+  margin: 0;
+
+  /* Disable scrollbar */
+  overflow: hidden;
+  font-family: "sans-serif";
+}
+
+#Langton {
+  image-rendering: crisp-edges;
+}
+
+#Settings {
+  position: absolute;
+  margin-top: 1.5em;
+  right: 2em;
+}
+
+#SettingsTitle {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#AntDefinition {
+  width: 10em;
+}
+
+#JumpValueLabel, #IntervalValueLabel {
+  position: absolute;
+  right: 0;
+  margin-left: 1em;
+}
+
+#ShowAntCheck, #ShowBoundsCheck, #ShowBoundsEditCheck {
+  float: right;
+}
+
+#SizeLeft, #SizeRight {
+  position: absolute;
+  top: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: gray;
+}
+
+#SizeTop, #SizeBottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: gray;
+}

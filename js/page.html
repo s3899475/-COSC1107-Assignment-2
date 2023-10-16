@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Langton's Ant</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+<body>
+    <div id="Settings">
+      <h3 id="SettingsTitle">Settings</h3>
+      <label for="AntDefinition">Ant Definition: </label>
+      <br>
+      <input id="AntDefinition" type="text" value="RL">
+      <button id="RestartButton" type="button">Restart</button>
+      <br>
+      <label for="JumpSlider">Jump (iterations): </label>
+      <label id="JumpValueLabel" for="JumpSlider">1</label>
+      <br>
+      <input id="JumpSlider" type="range" min="0" max="7" value="1">
+      <br>
+      <label for="IntervalSlider">Interval (ms): </label>
+      <label id="IntervalValueLabel" for="IntervalSlider">50</label>
+      <br>
+      <input id="IntervalSlider" type="range" min="0" max="7" value="3">
+      <br>
+      <label for="PaletteSelector">Colour Palette: </label>
+      <select id="PaletteSelector">
+        <option value="greyscale">Greyscale</option>
+        <option value="rainbow">Rainbow</option>
+      </select>
+      <br>
+      <label for="BoundsSelector">On Boundary: </label>
+      <select id="BoundsSelector">
+        <option value="loop">Loop</option>
+        <option value="stop">Stop</option>
+      </select>
+      <br>
+      <label for="ShowBoundsCheck">Show Bounds: </label>
+      <input id="ShowBoundsCheck" type="checkbox" checked>
+      <br>
+      <label for="ShowBoundsEditCheck">Show Bounds Editor: </label>
+      <input id="ShowBoundsEditCheck" type="checkbox" checked>
+      <br>
+      <label for="ShowAntCheck">Show Ant: </label>
+      <input id="ShowAntCheck" type="checkbox" checked>
+      <br>
+      <button id="RunButton" type="button">Run</button>
+      <p id="ErrorText"></p>
+    </div>
+    <canvas id="Langton" alt="Langton's Ant Simulation"></canvas>
+    <div id="SizeLeft"></div>
+    <div id="SizeRight"></div>
+    <div id="SizeTop"></div>
+    <div id="SizeBottom"></div>
+</body>
+</html>
